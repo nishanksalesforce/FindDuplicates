@@ -1,5 +1,7 @@
-# How to Use this FindDuplicateGeneric class
 
+## How to Use this FindDuplicateGeneric class
+
+```java
 MyObject__c myObjectInstance = new MyObject__c(Name='TestRecord');
 List<MyObject__c> duplicates = FindDuplicateGeneric.findDuplicateRecords(myObjectInstance);
 if(duplicates.size() == 0){
@@ -8,4 +10,5 @@ if(duplicates.size() == 0){
 } else{
     //desired update
 }
+```
 
