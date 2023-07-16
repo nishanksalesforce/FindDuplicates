@@ -1,6 +1,6 @@
 public class FindDuplicateGeneric{
   public static List<SObject> findDuplicateRecords(sObject record){
-      List<record> sObjectList = new List<record>();
+      List<sObject> sObjectList = new List<sObject>();
       sObjectList.add(record);
   
       List<Datacloud.FindDuplicatesResult > findDuplicatesResult = Datacloud.FindDuplicates.findDuplicates(sObjectList);
